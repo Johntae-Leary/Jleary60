@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Johntae' Leary 
+ Carbondale Southern Illionis University
+ Date Created:September 1, 2024
+ Date Tested: September 1, 2024
+  -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> 
+<!-- Using the img scr to add in the image -->
+<div class="main-graphic">
+		
+	<img src="Images/Jay_Image.png" alt="Main_Image" class="graphic">
+	<img src="Images/Jay_Image2.png" alt="Hover_Image" class="graphic-hover">
+</div>
+
+	<link rel="stylesheet" href="CSS/Bikeshop.css"> 
+	<link rel= "stylesheet" href="CSS/slicknav.css"> 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+		}); 
+	</script>
+	
+
+	<meta name="description" content="A small bike shop with 5 differen brands of bike"> <meta name="keywords" content="miller, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Jay's Finest Bikes</title>
+    <meta charset="utf-8">
+    <meta name="bikeshop" content="A organized bikeshop website that describe what we do and how to contact or refrence">
+    <meta name="keywords" content="repairs, bikes, company"
+>
+</head>
+
+<body>
+	<header><img src \lab 1\images\bike_image.jp >
+		<h1>Jay's Finest Bikes</h1>
+		<h3>Come get the best ride for you </h3>
+	</header>
+   <nav id = "mobile_menu" ></nav>
+    <nav id = "nav_menu">
+       <ul>
+		<li><a href="index.html"> Home </a></li>
+        <li><a href="sales.html"> Sales  </a></li>
+		<li><a href="Rentals.htm"> Rentals </a></li>
+		<li><a href="services.html"> Services </a></li>
+		<li><a href="contact.html" class="Current"> Contact </a></li>
+	</ul>
+</nav>
+<div class="main-graphic">
+	<img src="Images/bike_image.jpg" alt="Main_Image" class="graphic" />
+</div>
+
+<h1>Please complete our survey</h1>
+<form name="myform" action="SurveyData.html" method="post">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    
+	<label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+
+    <h2>Address</h2>
+	<label for="state">State:</label>
+    <input type="text" name="state" id="state" required placeholder="two characters" pattern="[A-Za-z]{2}"
+	title = "Must be two characters"><br>
+	
+    <label for="zip">Zip code:</label>
+	<input type = "text" name = "zip" id= "zip" required placeholder="five digits" pattern="\d{5}"
+	title = "Must be 99999"> <br>
+
+	<label for="phone">Phone Number:</label>
+	<input type = "text" name = "phone" id= "phone" required placeholder="ten digits" pattern="\d{5}"
+	title = "Must be (XXX)- XXX -XXX"> <br>
+
+	<label for="date">Creation Date:</label>
+	<input type = "date" name = "date" id= "date" required>  <br>
+
+
+   
+
+	<h2>How did you hear about us? </h2>
+    <input type="checkbox" name="web" id="web" value = "web"><br>
+    <label for="web">Web search:</label>
+
+	<input type="checkbox" name="facebook" id="facebook" value = "facebook"><br>
+    <label for="facebook">Facebook:</label>
+
+	<input type="checkbox" name="Twitter" id="Twitter" value = "Twitter"><br>
+    <label for="Twitter">Twitter:</label>
+
+	<input type="checkbox" name="message" id="message" value = "message"><br>
+    <label for="message">Email Message:</label> 
+    
+    
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>  
+</body>
+</html>
