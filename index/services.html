@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Johntae' Leary 
+ Carbondale Southern Illionis University
+ Date Created:September 1, 2024
+ Date Tested: September 1, 2024
+  -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> 
+<!-- Using the img scr to add in the image -->
+<div class="main-graphic">
+		
+	<img src="Images/Jay_Image.png" alt="Main_Image" class="graphic">
+	<img src="Images/Jay_Image2.png" alt="Hover_Image" class="graphic-hover">
+</div>
+
+	<link rel="stylesheet" href="CSS/Bikeshop.css"> 
+	<link rel= "stylesheet" href="CSS/slicknav.css"> 
+	<link rel = "stylesheet" href="CSS/services.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+		}); 
+	</script>
+
+	<meta name="description" content="A small bike shop with 5 differen brands of bike"> <meta name="keywords" content="miller, Pro, cycle, Trek, GT, BMX, Road Bikes, Mountain Bikes, 29'ers">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Jay's Finest Bikes</title>
+    <meta charset="utf-8">
+    <meta name="bikeshop" content="A organized bikeshop website that describe what we do and how to contact or refrence">
+    <meta name="keywords" content="repairs, bikes, company"
+>
+</head>
+
+<body>
+	<header><img src \lab 1\images\bike_image.jp >
+		<h1>Jay's Finest Bikes</h1>
+		<h3>Come get the best ride for you </h3>
+	</header>
+   <nav id = "mobile_menu" ></nav>
+    <nav id = "nav_menu">
+       <ul>
+		<li><a href="index.html" > Home </a></li>
+        <li><a href="sales.html"> Sales </a></li>
+		<li><a href="Rentals.htm"> Rentals </a></li>
+		<li><a href="services.html" class = "Current" > Services </a></li>
+		<li><a href="contact.html" class="lastitem"> Contact </a></li>
+	</ul>
+</nav>
+
+<figure>
+    <caption>Bike Shop Services</caption>
+    <table>
+        <thead>
+            <tr>
+                <th class="right">Service Category</th>
+                <th class="left">Service Type</th>
+                <th class="left">Description</th>
+                <th class="left">Price</th>
+                <th class="left">Duration</th>
+                <th class="left">Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" class="left">Repairs</th>
+                <td>Puncture Repair</td>
+                <td>Fixing flat tires</td>
+                <td class="right">$20</td>
+                <td class="right">30 mins</td>
+                <td class="right">Walk-in</td>
+            </tr>
+            <tr>
+                <td>Brake Adjustment</td>
+                <td>Adjusting brake tension</td>
+                <td class="right">$25</td>
+                <td class="right">30 mins</td>
+                <td class="right">Walk-in</td>
+            </tr>
+            <tr>
+                <td>Gear Tune-Up</td>
+                <td>Adjusting gear shifting</td>
+                <td class="right">$40</td>
+                <td class="right">1 hour</td>
+                <td class="right">Appointment</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="left">Maintenance</th>
+                <td>Bike Tune-Up</td>
+                <td>Complete bike check and adjustment</td>
+                <td class="right">$60</td>
+                <td class="right">1.5 hours</td>
+                <td class="right">Appointment</td>
+            </tr>
+            <tr>
+                <td>Wheel Truing</td>
+                <td>Aligning and straightening wheels</td>
+                <td class="right">$35</td>
+                <td class="right">45 mins</td>
+                <td class="right">Walk-in</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="left">Rentals</th>
+                <td>Standard Bike Rental</td>
+                <td>Daily rental of standard bikes</td>
+                <td class="right">$25</td>
+                <td class="right">24 hours</td>
+                <td class="right">In-store</td>
+            </tr>
+            <tr>
+                <td>Electric Bike Rental</td>
+                <td>Daily rental of electric bikes</td>
+                <td class="right">$50</td>
+                <td class="right">24 hours</td>
+                <td class="right">In-store</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="left">Accessories</th>
+                <td>Helmet Rental</td>
+                <td>Daily rental of helmets</td>
+                <td class="right">$5</td>
+                <td class="right">24 hours</td>
+                <td class="right">In-store</td>
+            </tr>
+            <tr>
+                <td>Bike Lock Rental</td>
+                <td>Daily rental of bike locks</td>
+                <td class="right">$3</td>
+                <td class="right">24 hours</td>
+                <td class="right">In-store</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="left">All services subject to availability. Please call ahead for appointments.</td>
+            </tr>
+        </tfoot>
+    </table>
+</figure>
+</body>
+</html>
